@@ -1,4 +1,4 @@
-import { beforeRegistration } from './hooks/beforeRegistration.ts'
+import { beforeRegistration } from './hooks/beforeRegistration'
 import { VueStorefrontModule, VueStorefrontModuleConfig } from '@vue-storefront/core/lib/module'
 
 export const KEY = 'vsf-messenger-chat'
@@ -8,4 +8,4 @@ const moduleConfig: VueStorefrontModuleConfig = {
   beforeRegistration
 }
 
-export const VsfMessengerChat = new VueStorefrontModule(moduleConfig)
+export const FacebookCustomerChat = new VueStorefrontModule(moduleConfig)

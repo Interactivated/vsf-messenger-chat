@@ -32,7 +32,7 @@ export default {
     theme_color: {
       type: String,
       required: false,
-      default: chatConfig.themeColor,
+      default: chatConfig.themeColor || '#0084FF',
       validator: value => {
         // isHex?
         if (value.substr(0, 1) !== '#') {
@@ -46,7 +46,7 @@ export default {
       type: String,
       required: false,
       default: chatConfig.loggedInGreeting,
-      validator: value => value.length <= 80 // It's my length
+      validator: value => value.length <= 80
     },
     logged_out_greeting: {
       type: String,

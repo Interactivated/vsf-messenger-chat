@@ -1,4 +1,4 @@
-// We can register Customer Chat code
+// We register Customer Chat code
 
 const messengerChatSnippet = function (d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0]
@@ -14,6 +14,5 @@ const messengerChatSnippet = function (d, s, id) {
 export function beforeRegistration ({ Vue, config, store, isServer }) {
   if (!isServer && config.facebookJsSdk && config.facebookJsSdk.appId) {
     messengerChatSnippet (document, 'script', 'facebook-jssdk')
-  } 
+  }
 }
- 

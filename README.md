@@ -54,12 +54,12 @@ Go to `../vue-storefront/src/modules/index.ts` and add code below
 
 ```javascript
 import { VsfFacebookJsSdk } from './vsf-facebook-js-sdk'
-import { VsfMessengerChat } from './vsf-messenger-chat'
+import { FacebookCustomerChat } from './vsf-messenger-chat'
 ...
 export const registerModules: VueStorefrontModule[] = [
 ...
 VsfFacebookJsSdk,
-VsfMessengerChat
+FacebookCustomerChat
 ...
 ]
 ```
