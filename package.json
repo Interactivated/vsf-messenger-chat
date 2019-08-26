@@ -1,6 +1,6 @@
 {
   "name": "@interactivated/vsf-messenger-chat",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Facebook Messneger Customer Chat module for Vue Storefront",
   "main": "index.ts",
   "scripts": {

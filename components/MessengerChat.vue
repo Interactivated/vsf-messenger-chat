@@ -45,25 +45,25 @@ export default {
     logged_in_greeting: {
       type: String,
       required: false,
-      default: chatConfig.loggedInGreeting,
+      default: chatConfig.loggedInGreeting || 80,
       validator: value => value.length <= 80
     },
     logged_out_greeting: {
       type: String,
       required: false,
-      default: chatConfig.loggedOutGreeting,
+      default: chatConfig.loggedOutGreeting || 80,
       validator: value => value.length <= 80
     },
     greeting_dialog_display: {
       type: String,
       required: false,
-      default: chatConfig.greetingDialogDisplay,
+      default: chatConfig.greetingDialogDisplay || 'hide',
       validator: value => ['show', 'fade', 'hide'].includes(value)
     },
     greeting_dialog_delay: {
       type: Number,
       required: false,
-      default: chatConfig.greetingDialogDelay
+      default: chatConfig.greetingDialogDelay || 5
     }
   }
 }

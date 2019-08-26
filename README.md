@@ -79,13 +79,6 @@ Go to `../vue-storefront/config/local.json` and add code below
   "appId" : "<your_fb_app_id>",
   "pageId": "<your_fb_page_id>"
 },
-"facebookMessengerChat": {
-  "themeColor": "#0084FF",
-  "loggedInGreeting": "80",
-  "loggedOutGreeting": "80",
-  "greetingDialogDisplay": "hide",
-  "greetingDialogDelay": 5
-},
 ```
 
 <br/>
@@ -153,7 +146,7 @@ You can customize the appearance of your Customer Chat by passing values to comp
 
 <script>
 ...
-import { MessengerChat } from 'src/modules/vsf-messenger-chat/components/MessengerChat';
+import MessengerChat from 'src/modules/vsf-messenger-chat/components/MessengerChat'
 ...
 export default {
  components: {
