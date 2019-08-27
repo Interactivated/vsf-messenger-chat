@@ -38,8 +38,7 @@
 
 ```bash
 cd ../vue-storefront/src/modules;
-git clone https://github.com/new-fantastic/vsf-facebook-js-sdk.git;
-git clone https://github.com/new-fantastic/vsf-messenger-chat.git;
+git clone https://github.com/Interactivated/vsf-messenger-chat.git
 ```
 
 <br/>
@@ -53,12 +52,9 @@ Go to `../vue-storefront/src/modules/index.ts` and add code below
 <br/>
 
 ```javascript
-import { VsfFacebookJsSdk } from './vsf-facebook-js-sdk'
 import { FacebookCustomerChat } from './vsf-messenger-chat'
 ...
 export const registerModules: VueStorefrontModule[] = [
-...
-VsfFacebookJsSdk,
 FacebookCustomerChat
 ...
 ]
@@ -78,6 +74,13 @@ Go to `../vue-storefront/config/local.json` and add code below
 "facebookJsSdk": {
   "appId" : "<your_fb_app_id>",
   "pageId": "<your_fb_page_id>"
+},
+"facebookMessengerChat": {
+  "themeColor": "#0084FF",
+  "loggedInGreeting": "80",
+  "loggedOutGreeting": "80",
+  "greetingDialogDisplay": "hide",
+  "greetingDialogDelay": 5
 },
 ```
 
